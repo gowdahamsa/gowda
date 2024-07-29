@@ -1,0 +1,25 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Toggle Example</title>
+    <script type="text/javascript">
+        // JavaScript function to toggle the image display
+        function toggleImage() {
+            var img = document.getElementById('toggleImage');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Image Toggle Example</h2>
+    <button onclick="toggleImage()">Toggle Image</button>
+    <br /><br />
+    <img id="toggleImage" src="https://i.pinimg.com/736x/c2/4c/4b/c24c4bea7a5fac5c961b9a2355b2b432.jpg" alt="Toggle Image" style="display: block; max-width: 300px;" />
+</body>
+</html>
