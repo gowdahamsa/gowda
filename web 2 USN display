@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<head>
+<title>Lab Program 2</title>
+    <script type="text/javascript">
+        function validator()
+        {
+            var usn = document.getElementById('rel');
+            alert(usn.value);
+
+            if(iscorrect(usn))
+            {
+                return true;
+            } 
+            return false;
+        }
+
+        function iscorrect(elem1)
+        {
+            usnexp = /[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/
+
+            if(elem1.value.length == 0)
+            {
+                alert("USN NUMBER IS EMPTY");
+                elem1.focus();
+                return false;
+            }
+            else if(!elem1.value.match(usnexp))
+            {
+                alert("USN NUMBER SHOULD BE IN DAADDAADDD FORMAT");
+                elem1.focus(); 
+                return false;
+            }
+
+            alert("USN NUMBER IS CORRECT");
+
+            return true;
+
+        }
+    </script>
+</head>
+<body>
+   <form onsubmit="return validator()" id="color">
+
+    ENTER YOUR USN IN DAADDAADDD FORMAT:
+    <input type="text" id="rel">
+    <input type="submit" value="checkfield">
+
+</form> 
+</body>
+</html>
