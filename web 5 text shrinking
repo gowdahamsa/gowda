@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 4</title>
+    <script type="text/javascript">
+        var c = 0, t, t1;
+        function start() {
+            t = document.getElementById("t");
+            t.innerHTML = "Text-Growing: " + c + "pt";
+            t.style.fontSize = c + "pt";
+            t.style.color = "red";
+            t2 = setInterval(incr, 100);
+        }
+        function incr() {
+            c++;
+            t.innerHTML = "Text-Growing: " + c + "pt";
+            t.style.fontSize = c + "pt";
+            if (c > 50) {
+                clearInterval(t2);
+                alert("Font size reached 50pt. Text will now shrink.");
+                t1 = setInterval(decr, 100);
+            }
+            t.style.color = "red";
+        }
+        function decr() {
+            c--;
+            t.innerHTML = "Text-Shrinking: " + c + "pt";
+            t.style.fontSize = c + "pt";
+            if (c == 5) {
+                clearInterval(t1);
+            }
+            t.style.color = "blue";
+        }
+    </script>
+</head>
+<body bgcolor="#ffdead" onload="start()">
+    <center>
+        <p id="t"></p>
+    </center>
+</body>
+</html>
