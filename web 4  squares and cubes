@@ -1,0 +1,39 @@
+
+<?xml version="0.1" encoding = "utf-8">
+<DOCTYPE html PUBLIC "-"//w3c//DTDXHTML 1.1//EN" "http://www.w3.org/TR/xhtml/11/DTD/xhtml.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<marquee><title>PROGRAM-2 Program of Squares and Cubes</title></marquee>
+<script>
+    document.write("<center><table> <tr><th>Num</th> <th>Squares</th> <th>Cubes</th>")
+        for(var n=0;n<=10;n++)
+        {
+            document.write("<tr><td>"+n+"</td><td>"+n*n+"</td><td>"+n*n*n+"</td></tr>")
+        }
+    document.write("</table> </center>")
+</script>
+<style>
+    table{
+        color:#333;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 640px;
+        height: 640px;
+        border-collapse: collapse;
+        border-spacing: 0cap;
+    }
+    td,th{
+        border: 1px solid #966363;
+        height: 30px;
+    }
+    th{
+        background-color:grey;
+        font-weight: bold;
+    }
+    td{
+        background-color: aliceblue;
+        text-align: center;
+    }
+</style>
+</head>
+</html>
