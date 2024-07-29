@@ -1,0 +1,117 @@
+    <?xml version="1.0"encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN""http://WWW.W3.org/TR/xhtml11.DTD">
+<html xmlns="https://wwww.w3.org/1999/xhtml"
+<head>
+<title>Lab Program 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="border">
+        <h1>To display a table</h1>
+            <caption>fruit juice drink</caption>
+            <tr>
+                <td rowspan="2"</td>
+                    <th colspan="3">fruit drinks</th>
+            </tr>
+            <tr>
+                <th> Apple</th>
+                <th>orange</th>
+                <th>strawberry</th>
+            </tr>
+            <tr>
+                <th>Breakfast</th>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>lunch</th>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th>dinner</th>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+    </table>
+                <h1>To display an image</h1>
+                    <img src="Screenshot (3).png" alt="Screenshot" width="500px" height="500px"/>
+                <br/>
+                <h1>To exhibit hyperlink</h1>
+                <a href="program.html">click here</a>
+                <br/>
+                <br/>
+                <br/>
+                <h1>unordered list</h1>
+                <ol>
+                    <li>Benz</li>
+                    <li>toyota</li>
+                    <li>tata</li>
+                </ol>
+                <h1>unordered list</h1>
+                <ul>
+                    <li>apple</li>
+                    <li>orange</li>
+                    <li>banana</li>
+                </ul>
+                <h1>definition list</h1>
+                <dl>
+                    <dt>apple</dt>
+                    <dd>it is fruit</dd>
+                    <dt>tomato</dt>
+                    <dd>it is a vegetable</dd>
+                    <dt>audi</dt>
+                    <dd>it is a car brand</dd>
+                </dl>
+</body>
+</html>
+
+CSS file
+
+p,table,li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10pt;
+}
+
+p{word-spacing:5px;}
+
+p,li,td{
+    font-size: 75%;
+}
+
+td{padding: 0.5cm;}
+
+th{
+    text-align: center;
+    font-size: 85%;
+}
+
+h1,h2,hr{
+    color: black;
+}
+
+table{
+    border-style: outset;
+    background-color: chartreuse;
+}
+
+li{
+    list-style-type: lower-roman;
+}
+
+span{
+    color: blue;
+    background-color: darkcyan;
+    font-size: 29pt;
+    font-style: italic;
+    font-weight: bold;
+}
+body{
+    background-color: aqua;
+}
+
+
+
